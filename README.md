@@ -52,14 +52,8 @@ Built using microservices, Kafka, Redis, and PostgreSQL, the system supports hig
 ---
 
 ## Architecture
-
+The architecture below illustrates a scalable microservices-based ride-sharing backend. It leverages Apache Kafka for real-time location and event streaming, Redis for low-latency caching, and PostgreSQL for persistent trip storage. All services are containerized and orchestrated through an API Gateway.
 ![Architecture](docs/architecture.png)
-
----
-
-## Messages Flow
-
-![Message Flow](docs/message_flow.png)
 
 ---
 
@@ -71,9 +65,6 @@ Built using microservices, Kafka, Redis, and PostgreSQL, the system supports hig
 - **R. Zhang** – Redis, logging, monitoring
 
 ---
-
-## ✅ Recruiter & Engineering Focus
-
 This project demonstrates:
 
 ✅ Backend engineering at scale (Kafka, REST APIs)  
@@ -84,6 +75,17 @@ This project demonstrates:
 It is built to simulate a real-world Amazon backend service, focusing on reliability, scalability, and ownership.
 
 ---
+🧪 How to Run the Project
+
+You can run the system either using Docker Compose or manually starting each service.
+
+# 1. Clone the repository
+git clone https://github.com/chandu55526/scalable-ride-sharing-unt-capstone.git
+cd scalable-ride-sharing-unt-capstone
+
+# 2. Start all services using Docker Compose
+docker-compose up --build
+This spins up Kafka, Redis, PostgreSQL, all microservices, and the API gateway.
 
 ## 🧾 Verify Timeline
 
@@ -96,8 +98,5 @@ This project was developed between **March 2023 and May 2024** as part of UNT’
 ## 📬 Contact
 
 **V Chandra Sekhar**  
-📍 Dallas, TX | 📧 chandrasekhar214@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/YOUR_PROFILE) *(replace this)*  
-📂 Resume available upon request
 
 --
