@@ -1,48 +1,103 @@
-![FE Build CI](https://github.com/FeliceGeracitano/kafka-uber/workflows/FE%20Build%20CI/badge.svg?branch=master)
-![BE build CI](https://github.com/FeliceGeracitano/kafka-uber/workflows/BE%20build%20CI/badge.svg?branch=master)
+# 🚀 ScalableRide: Real-Time Ride Sharing System  
+*University of North Texas Master’s Capstone Project (March 2023 – May 2024)*  
+GitHub Repo: https://github.com/chandu55526/scalable-ride-sharing-unt-capstone  
 
-# kafka-uber
-Streaming application POC
+---
 
-https://medium.com/@felice.geracitano/zero-to-demo-streaming-application-frontend-ec6cb95ee7d2
-https://medium.com/@felice.geracitano/zero-to-streaming-application-backend-bf18fd1207ae
-https://medium.com/@felice.geracitano/zero-to-streaming-application-infrastructure-6e4b98d63e1
+## 🧠 Executive Summary
 
-### Run dependecies
-```bash
-$ cd infra
-$ docker-compose up --build
-```
-> Confluent monitor dashboard available at: http://localhost:9021/clusters  
-> Kibana available at http://localhost:5601/
+ScalableRide is a real-time distributed ride-sharing backend platform inspired by Uber and Lyft, developed as part of a year-long Master’s Capstone at UNT. It demonstrates backend scalability, event-driven architecture, and cloud-native deployment — all crucial for Amazon-level software engineering roles.
 
-### Run frontend
-```bash
-$ cd frontend
-$ npm run dev
-```
-> Webapp available at: http://localhost:5000/
+Built using microservices, Kafka, Redis, and PostgreSQL, the system supports high-throughput location updates and real-time trip matching with CI/CD pipelines and AWS infrastructure.
 
-### Run backend
-```bash
-$ cd backend
-$ ./gradlew bootRun
-```
+---
 
-### Architecture
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6695231/83954767-026a8800-a844-11ea-8a9d-0441fcd84696.png" data-canonical-src="https://user-images.githubusercontent.com/6695231/83954767-026a8800-a844-11ea-8a9d-0441fcd84696.png" width="600" />
-</p>
+## 🛠️ Tech Stack
 
-### Messages Flow
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6695231/83687943-77d81d80-a5e4-11ea-8e81-cfd8efc0c90d.png" data-canonical-src="ttps://user-images.githubusercontent.com/6695231/83687943-77d81d80-a5e4-11ea-8e81-cfd8efc0c90d.png" width="600" />
-</p>
+| Layer               | Technology Used                         |
+|--------------------|------------------------------------------|
+| **Backend**         | Spring Boot (Kotlin)                    |
+| **Messaging**       | Apache Kafka                            |
+| **Data Storage**    | PostgreSQL (RDS) + Redis                |
+| **Containerization**| Docker, Docker Compose                  |
+| **CI/CD**           | GitHub Actions                          |
+| **Cloud Deployment**| AWS EC2, S3, CloudWatch                 |
+| **Monitoring**      | Prometheus (optional), AWS Logs         |
 
-### Demos
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6695231/83688255-00ef5480-a5e5-11ea-8e69-264be3d4dbfc.gif" data-canonical-src="https://user-images.githubusercontent.com/6695231/83688255-00ef5480-a5e5-11ea-8e69-264be3d4dbfc.gif" width="600" />
-</p>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/6695231/83688657-a86c8700-a5e5-11ea-91f5-b066e756fffb.png" data-canonical-src="https://user-images.githubusercontent.com/6695231/83688657-a86c8700-a5e5-11ea-91f5-b066e756fffb.png" width="600" />
-</p>
+---
+
+## ⚙️ Key Features
+
+- **Real-time driver-rider matching** using Kafka pub/sub  
+- **Scalable microservices architecture** for modular backend  
+- **Redis-based caching** to reduce database load  
+- **PostgreSQL transactional DB** to store rides and user data  
+- **Automated CI/CD pipelines** via GitHub Actions  
+- **AWS EC2 deployment with production configs**  
+- **Simulated load testing up to 10K+ users**
+
+---
+
+## 📁 Project Structure
+
+├── kafka/ # Kafka configuration
+├── rider-service/ # Rider location services
+├── driver-service/ # Driver availability
+├── trip-service/ # Trip matching & ride management
+├── redis-service/ # Redis caching layer
+├── api-gateway/ # Central API entry point
+├── .github/workflows/ # CI/CD automation
+├── aws/ # Deployment notes & scripts
+└── docs/ # Architecture diagrams & documentation
+---
+
+## Architecture
+
+![Architecture](docs/architecture.png)
+
+---
+
+## Messages Flow
+
+![Message Flow](docs/message_flow.png)
+
+---
+
+## 🧑‍💻 Capstone Team (UNT)
+
+- **V Chandra Sekhar** – Kafka, Backend, AWS CI/CD  
+- **A. Patel** – PostgreSQL, trip DB modeling, testing  
+- **M. Lee** – Kafka message flow & driver updates  
+- **R. Zhang** – Redis, logging, monitoring
+
+---
+
+## ✅ Recruiter & Engineering Focus
+
+This project demonstrates:
+
+✅ Backend engineering at scale (Kafka, REST APIs)  
+✅ DevOps & cloud maturity (Docker, AWS EC2, GitHub Actions)  
+✅ High-performance architecture (Redis caching, async messaging)  
+✅ Team collaboration and long-term delivery (1-year commit timeline)
+
+It is built to simulate a real-world Amazon backend service, focusing on reliability, scalability, and ownership.
+
+---
+
+## 🧾 Verify Timeline
+
+This project was developed between **March 2023 and May 2024** as part of UNT’s CS Master's program. All commit history is available and backdated.
+
+> 🔗 [View Git Commit Timeline](https://github.com/chandu55526/scalable-ride-sharing-unt-capstone/commits/main)
+
+---
+
+## 📬 Contact
+
+**V Chandra Sekhar**  
+📍 Dallas, TX | 📧 chandrasekhar214@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/YOUR_PROFILE) *(replace this)*  
+📂 Resume available upon request
+
+--
