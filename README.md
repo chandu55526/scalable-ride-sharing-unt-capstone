@@ -39,16 +39,16 @@ Built using microservices, Kafka, Redis, and PostgreSQL, the system supports hig
 ---
 
 ## 📁 Project Structure
-
-├── kafka/ # Kafka configuration
-├── rider-service/ # Rider location services
-├── driver-service/ # Driver availability
-├── trip-service/ # Trip matching & ride management
-├── redis-service/ # Redis caching layer
-├── api-gateway/ # Central API entry point
-├── .github/workflows/ # CI/CD automation
-├── aws/ # Deployment notes & scripts
-└── docs/ # Architecture diagrams & documentation
+```text
+├── kafka/                 # Kafka configuration
+├── rider-service/         # Rider location services
+├── driver-service/        # Driver availability
+├── trip-service/          # Trip matching & ride management
+├── redis-service/         # Redis caching layer
+├── api-gateway/           # Central API entry point
+├── .github/workflows/     # CI/CD automation
+├── aws/                   # Deployment notes & scripts
+└── docs/                  # Architecture diagrams & documentation
 ---
 
 ## Architecture
