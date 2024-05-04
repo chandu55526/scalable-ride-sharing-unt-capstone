@@ -39,6 +39,7 @@ Built using microservices, Kafka, Redis, and PostgreSQL, the system supports hig
 ---
 
 ## 📁 Project Structure
+
 ```text
 ├── kafka/                 # Kafka configuration
 ├── rider-service/         # Rider location services
@@ -49,6 +50,8 @@ Built using microservices, Kafka, Redis, and PostgreSQL, the system supports hig
 ├── .github/workflows/     # CI/CD automation
 ├── aws/                   # Deployment notes & scripts
 └── docs/                  # Architecture diagrams & documentation
+```
+
 ---
 
 ## Architecture
